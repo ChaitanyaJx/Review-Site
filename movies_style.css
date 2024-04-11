@@ -1,0 +1,99 @@
+body {
+    font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #fceed1;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    color: #7d3cff;
+}
+
+.dirhead {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #f2d53c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left-list,
+.right-list {
+    width: 45%;
+    padding: 20px;
+    background-color: #478559;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.list-heading {
+    text-align: center;
+    color: #161748;
+}
+
+.left-list {
+    order: 1;
+}
+
+.right-list {
+    order: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f95d9b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #39a0ca;
+}
+
+.plothead {
+    background-color: #f2d53c;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plothead:hover {
+    background-color: #c80e13;
+}

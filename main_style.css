@@ -1,0 +1,147 @@
+/* Corrected CSS #2 */
+body {
+    font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #fceed1; 
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    color: #7d3cff; 
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left-list,
+.right-list {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffcc66; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.list-heading {
+    text-align: center;
+    color: #161748; 
+}
+
+.left-list {
+    order: 1;
+}
+
+.right-list {
+    order: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ff6666; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #66b2ff; 
+}
+
+
+.poster-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.poster-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.rating-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b3ffb3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.rating-form-container h2 {
+    text-align: center;
+    color: #161748;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #161748;
+}
+
+select, input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #161748;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #161748;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .left-list,
+    .right-list {
+        width: 100%;
+    }
+}
+.thank-you-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thank-you-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50; 
+    padding: 10px;
+    background-color: #fceed1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+

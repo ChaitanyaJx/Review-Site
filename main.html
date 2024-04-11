@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya's Reviews</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+    <h1> Review Blog </h1>
+    <div class="reviews-container">
+        <div class="left-list">
+            <h2 class="list-heading">Movie Reviews</h2>
+            <ul>
+
+                <a href="movies.html#Pulp_Fiction" target="_blank" rel="noopener noreferrer" > 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/pulpfi.jpg" alt="Pulp Fiction Poster">
+                        </div>
+                        Pulp Fiction
+                    </li>
+                </a>
+
+                <a href="movies.html#Good_Will_Hunting" target="_blank" rel="noopener noreferrer" > 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/gwh.jpg" alt="Good Will Hunting Poster">
+                        </div>
+                        Good Will Hunting
+                    </li>
+                </a>
+
+                <a href="movies.html#The_Wolf_of_Wall_Street" target="_blank" rel="noopener noreferrer" > 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/wolfwall.jpg" alt="he Wolf of Wall Street  Poster">
+                        </div>
+                        The Wolf of Wall Street 
+                    </li>
+                </a>
+
+                <a href="movies.html#Blade_Runner_2049" target="_blank" rel="noopener noreferrer" > 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/bladerunner.jpg" alt="Blade Runner 2049 Poster">
+                        </div>
+                        Blade Runner 2049
+                    </li>
+                </a>
+
+                <a href="movies.html#Shutter_Island" target="_blank" rel="noopener noreferrer" > 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/shutterisland.jpg" alt="Shutter Island Poster">
+                        </div>
+                        Shutter Island
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="right-list">
+            <h2 class="list-heading">Anime Reviews</h2>
+            <ul>
+                <a href="anime.html#Death_Note" target="_blank" rel="noopener noreferrer"> 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/deathnote.jpg" alt="Death Note Poster">
+                        </div>
+                        Death Note
+                    </li>
+                </a>
+
+                <a href="anime.html#Bakemonogatari" target="_blank" rel="noopener noreferrer"> 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/bakemono.jpg" alt="Bakemonogatari Poster">
+                        </div>
+                        Bakemonogatari
+                    </li>
+                </a>
+
+                <a href="anime.html#Jujutsu_Kaisen" target="_blank" rel="noopener noreferrer"> 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/jjk.jpg" alt="Jujutsu Kaisen Poster">
+                        </div>
+                        Jujutsu Kaisen
+                    </li>
+                </a>
+
+                <a href="anime.html#Kakegurui" target="_blank" rel="noopener noreferrer"> 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/kakegurui.jpg" alt="Kakegurui Poster">
+                        </div>
+                        Kakegurui
+                    </li>
+                </a>
+
+
+                <a href="anime.html#Sonny_Boy" target="_blank" rel="noopener noreferrer"> 
+                    <li>
+                        <div class="poster-container">
+                            <img src="img/sonnyboy.jpg" alt="Sonny Boy Poster">
+                        </div>
+                        Sonny Boy
+                    </li>
+                </a>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="rating-form-container">
+        <h2>Review Rating Form</h2>
+        <form action="test.php" method="post">
+            <label for="reviewType">Select Review Type:</label>
+            <select id="reviewType" name="reviewType">
+                <option value="movie">Movie</option>
+                <option value="anime">Anime</option>
+            </select>
+
+            <label for="reviewTitle">Review Title:</label>
+            <select id="reviewTitle" name="reviewTitle" required>
+
+                <optgroup label="Movies">
+                    <option value="Pulp Fiction">Pulp Fiction</option>
+                    <option value="Good Will Hunting">Good Will Hunting</option>
+                    <option value="The Wolf of Wall Street">The Wolf of Wall Street</option>
+                    <option value="Blade Runner 2049">Blade Runner 2049</option>
+                    <option value="Shutter Island">Shutter Island</option>
+                </optgroup>
+
+                <optgroup label="Anime">
+                    <option value="Death Note">Death Note</option>
+                    <option value="Bakemonogatari">Bakemonogatari</option>
+                    <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+                    <option value="Kakegurui">Kakegurui</option>
+                    <option value="Sonny Boy">Sonny Boy</option>
+                </optgroup>
+            </select>
+
+            <label for="rating">Rating (1-10):</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <label for="yourName">Your Name:</label>
+            <input type="text" id="yourName" name="yourName" required>
+
+            <button type="submit">Submit Review</button>
+
+        </form>
+    </div>
+
+    <div class="thank-you-container">
+        <p class="thank-you-message">Thank you for visiting Chaitanya's Review Blog!</p>
+    </div>
+</body>
+</html>
